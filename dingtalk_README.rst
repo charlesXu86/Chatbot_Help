@@ -31,12 +31,6 @@
 
 由于各种消息调用，官方只提供Java语言的封装，平时使用Python比较多，为了更方便平时自动化项目的使用，周末花了点时间用Python语言对各种消息类型进行了一一封装，代码已开源在GitHub上，同时也上传了PyPI。
 
-| 1、项目源码地址如下：\ `DingtalkChatbot <https://github.com/zhuifengshen/DingtalkChatbot>`__
-| 2、安装命令如下：
-
-::
-
-    pip install DingtalkChatbot
 
 3、支持功能如下：
 
@@ -165,8 +159,8 @@
 
 （如果对你有帮助的话，欢迎**star**）
 
-.. |image0| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/text_at_all.png
-.. |image1| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/text_at_one.png
+.. |image0| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/text_at_all.png
+.. |image1| image:: ttps://github.com/charlesXu86/Chatbot_Help/blob/master/img/text_at_one.png
 .. |image2| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/link.png
 .. |image3| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/markdown_at_all.png
 .. |image4| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/markdown_at_one.png

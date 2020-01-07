@@ -19,7 +19,7 @@
 
 ::
 
-    pip install RobotHelp
+    pip install Chatbot_Help
 
 
 
@@ -33,4 +33,12 @@
 四、Update News
 ======================
 
- * 2020.1.7  接入钉钉群，支持主动推送消息、outgoing交互
+    * 2020.1.7  接入钉钉群，支持主动推送消息、outgoing交互
+
+
+
+
+
+五、参考
+======================
+1、
