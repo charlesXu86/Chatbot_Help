@@ -1,4 +1,4 @@
-一、钉钉自定义机器人介绍
+一、钉钉机器人接入介绍
 ==========================
 
 钉钉机器人是钉钉群的一个高级扩展功能，但使用起来却非常简单，只需要注册一个钉钉账号，就可以将第三方服务信息聚合到钉钉群中，实现信息的自动同步。
@@ -13,7 +13,8 @@
 
 目前自定义机器人支持文本（text）、链接（link）、markdown三种消息格式，五种消息类型，详细信息请参考\ `自定义机器人官方文档 <https://open-doc.dingtalk.com/docs/doc.htm?spm=0.0.0.0.0Sds7z&treeId=257&articleId=105733&docType=1>`__
 
-二、安装使用
+
+二、使用
 ============
 
 这么好用的功能，只要在钉钉群中添加机器人，得到Webhoo地址即可。接下来，我们先在命令行终端一睹为快吧：
@@ -44,6 +45,7 @@
 -  支持钉钉官方消息发送频率限制限制：每个机器人每分钟最多发送20条；
 -  支持钉钉开放平台之企业内部\ `自定义outgoing机器人消息发送 <https://open-doc.dingtalk.com/doc.htm#?docType=1&docId=108063&previewCode=BA089C5628865CADD5A760C40D515181>`__；
 
+
 三、各消息类型使用示例
 ======================
 
@@ -51,7 +53,7 @@
 
 .. code:: python
 
-    from dingtalkchatbot.chatbot import DingtalkChatbot
+    from Chatbot_help.chatbot import DingtalkChatbot
     # WebHook地址
     webhook = 'https://oapi.dingtalk.com/robot/send?access_token=这里填写自己钉钉群自定义机器人的token'
     # 初始化机器人小丁
@@ -155,17 +157,13 @@
                                  hide_avatar=1)
     xiaoding.send_action_card(actioncard3)
 
-**哥们，更多使用场景，现在尽情展开想象吧...**
-
-（如果对你有帮助的话，欢迎**star**）
-
 .. |image0| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/text_at_all.png
-.. |image1| image:: ttps://github.com/charlesXu86/Chatbot_Help/blob/master/img/text_at_one.png
-.. |image2| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/link.png
-.. |image3| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/markdown_at_all.png
-.. |image4| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/markdown_at_one.png
-.. |image5| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/feedcard.png
-.. |image6| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/global_actioncard.png
-.. |image7| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/select_actioncard.png
-.. |image8| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/multi_actioncard.png
-.. |image9| image:: https://raw.githubusercontent.com/zhuifengshen/DingtalkChatbot/master/img/image_msg.png
+.. |image1| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/text_at_one.png
+.. |image2| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/link.png
+.. |image3| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/markdown_at_all.png
+.. |image4| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/markdown_at_one.png
+.. |image5| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/feedcard.png
+.. |image6| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/global_actioncard.png
+.. |image7| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/select_actioncard.png
+.. |image8| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/multi_actioncard.png
+.. |image9| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/image_msg.png

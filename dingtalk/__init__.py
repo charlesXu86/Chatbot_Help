@@ -12,3 +12,5 @@
 @Desc    :
  
 '''
+
+from dingtalk.dingtalkbot import DingtalkChatbot
