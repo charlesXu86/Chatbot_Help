@@ -28,6 +28,8 @@
 
 1、dingtalk
 
+.. code:: python
+
     import chatbot_help as ch
     from chatbot_help import DingtalkChatbot
 
