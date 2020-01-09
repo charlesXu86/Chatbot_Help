@@ -13,22 +13,7 @@
 
 '''
 
-import io
-import os
-import sys
-from shutil import rmtree
 from setuptools import setup, find_packages, Command, convert_path
-
-about = {}
-here = os.path.abspath(os.path.dirname(__file__))
-
-with io.open(os.path.join(here, 'dingtalkchatbot', '__about__.py'), encoding='utf-8') as f:
-    exec(f.read(), about)
-
-with io.open("README.rst", encoding='utf-8') as f:
-    long_description = f.read()
-
-install_requires = ["requests"]
 
 def _version():
     ns = {}
@@ -36,21 +21,26 @@ def _version():
         exec(fh.read(), ns)
     return ns['__version__']
 
+__version = _version()
 
+with open("README.rst", "r") as fh:
+    long_description = fh.read()
 
 setup(
-    name=about['__title__'],
-    version=about['__version__'],
-    packages=find_packages(),
-    description=about['__description__'],
+    name="chatbot_help",
+    version=__version,
+    keywords='钉钉 机器人 dingtalk chatbot robot bot 微信机器人 qq机器人',
+    description="An useful tool to help your chatbot to connect third platform, such as dingtalk, wetalk",
     long_description=long_description,
-    author=about['__author__'],
-    author_email=about['__author_email__'],
-    url=about['__url__'],
-    license=about['__license__'],
+    long_description_content_type="text/x-rst",
+    author="Xu",
+    author_email="charlesxu86@163.com",
+    url="https://github.com/charlesXu86/Chatbot_Help",
+    license="MIT Licence",
     python_requires='!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4',
-    keywords='钉钉 机器人 dingtalk chatbot robot bot',
-    install_requires=install_requires,
+    packages=find_packages(),
+    package_data={"": ["*.txt", "*.rst"]},
+    install_requires=[],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         'Programming Language :: Python :: 3.4',
@@ -58,8 +48,5 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7'
     ],
-    # python setup.py upload
-    cmdclass={
-        'upload': UploadCommand
-    }
 )
+print("Welcome to Chatbot_Help")

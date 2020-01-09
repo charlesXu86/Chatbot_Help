@@ -15,7 +15,7 @@
 
 import unittest
 
-from dingtalk.dingtalkbot import DingtalkChatbot, is_not_null_and_blank_str, ActionCard, FeedLink, CardItem
+from chatbot_help.dingtalk import DingtalkChatbot, is_not_null_and_blank_str, ActionCard, FeedLink, CardItem
 
 
 class TestDingtalkChatbot(unittest.TestCase):
