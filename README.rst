@@ -36,7 +36,7 @@
     print(ch.__version__)                # 打印版本信息
     dtalk = DingtalkChatbot(webhook)     # 你设置群机器人的时候生成的webhook
 
-详情请参考：`Dingtalk_README`
+详情请参考：`Dingtalk_README <https://github.com/charlesXu86/Chatbot_Help/blob/master/Dingtalk_README.rst>`_
 
 四、Update News
 ======================
