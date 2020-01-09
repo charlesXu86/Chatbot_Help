@@ -17,7 +17,7 @@ from setuptools import setup, find_packages, Command, convert_path
 
 def _version():
     ns = {}
-    with open(convert_path("version.py"), "r") as fh:
+    with open(convert_path("chatbot_help/version.py"), "r") as fh:
         exec(fh.read(), ns)
     return ns['__version__']
 
