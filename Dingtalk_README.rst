@@ -21,7 +21,7 @@
 
 ::
 
-    curl 'https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxx' \
+    curl 'https://oapi.dingtalk.com/robot/send?access_token=xxxxxx' \
        -H 'Content-Type: application/json' \
        -d '
       {"msgtype": "text",
