@@ -43,7 +43,7 @@
 -  支持消息发送失败时自动通知；
 -  支持Python2、Python3；
 -  支持钉钉官方消息发送频率限制限制：每个机器人每分钟最多发送20条；
--  支持钉钉开放平台之企业内部\ `自定义outgoing机器人消息发送 <https://open-doc.dingtalk.com/doc.htm#?docType=1&docId=108063&previewCode=BA089C5628865CADD5A760C40D515181>`__；
+-  支持钉钉开放平台之企业内部\ `自定义outgoing机器人消息发送 <https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq>`__；
 
 
 三、各消息类型使用示例
@@ -53,13 +53,13 @@
 
 .. code:: python
 
-    from Chatbot_help.chatbot import DingtalkChatbot
+    from chatbot_help import DingtalkChatbot
     # WebHook地址
     webhook = 'https://oapi.dingtalk.com/robot/send?access_token=这里填写自己钉钉群自定义机器人的token'
-    # 初始化机器人小丁
-    xiaoding = DingtalkChatbot(webhook)
+    # 初始化机器人小笨
+    xiaoben = DingtalkChatbot(webhook)
     # Text消息@所有人
-    xiaoding.send_text(msg='我就是小丁，小丁就是我！', is_at_all=True)
+    xiaoben.send_text(msg='我就是小笨，小笨就是我！', is_at_all=True)
 
 |image1|
 
@@ -67,7 +67,7 @@
 
     # Text消息之@指定用户
     at_mobiles = ['这里填写需要提醒的用户的手机号码，字符串或数字都可以']
-    xiaoding.send_text(msg='我就是小丁，小丁就是我！', at_mobiles=at_mobiles)
+    xiaoben.send_text(msg='我就是小笨，小笨就是我！', at_mobiles=at_mobiles)
 
 
 |image9|
@@ -75,7 +75,7 @@
 .. code:: python
 
     # image表情消息
-    xiaoding.send_image(pic_url='http://uc-test-manage-00.umlife.net/jenkins/pic/flake8.png')
+    xiaoben.send_image(pic_url='http://uc-test-manage-00.umlife.net/jenkins/pic/flake8.png')
 
 
 |image2|
@@ -83,14 +83,14 @@
 .. code:: python
 
     # Link消息
-    xiaoding.send_link(title='万万没想到，李小璐竟然...', text='故事是这样子的...', message_url='http://www.kwongwah.com.my/?p=454748", pic_url="https://pbs.twimg.com/media/CEwj7EDWgAE5eIF.jpg')
+    xiaoben.send_link(title='万万没想到，李小璐竟然...', text='故事是这样子的...', message_url='http://www.kwongwah.com.my/?p=454748", pic_url="https://pbs.twimg.com/media/CEwj7EDWgAE5eIF.jpg')
 
 |image3|
 
 .. code:: python
 
     # Markdown消息@所有人
-    xiaoding.send_markdown(title='氧气文字', text='#### 广州天气\n'
+    xiaoben.send_markdown(title='氧气文字', text='#### 广州天气\n'
                                '> 9度，西北风1级，空气良89，相对温度73%\n\n'
                                '> ![美景](http://www.sinaimg.cn/dy/slidenews/5_img/2013_28/453_28488_469248.jpg)\n'
                                '> ###### 10点20分发布 [天气](http://www.thinkpage.cn/) \n',
@@ -101,7 +101,7 @@
 .. code:: python
 
         # Markdown消息@指定用户
-        xiaoding.send_markdown(title='氧气文字', text='#### 广州天气 @18825166128\n'
+        xiaoben.send_markdown(title='氧气文字', text='#### 广州天气 @18825166128\n'
                                '> 9度，西北风1级，空气良89，相对温度73%\n\n'
                                '> ![美景](http://www.sinaimg.cn/dy/slidenews/5_img/2013_28/453_28488_469248.jpg)\n'
                                '> ###### 10点20分发布 [天气](http://www.thinkpage.cn/) \n',
@@ -116,7 +116,7 @@
     card2 = CardItem(title="氧眼美女", url="https://www.dingtalk.com/", pic_url="https://unzippedtv.com/wp-content/uploads/sites/28/2016/02/asian.jpg")
     card3 = CardItem(title="氧神美女", url="https://www.dingtalk.com/", pic_url="https://unzippedtv.com/wp-content/uploads/sites/28/2016/02/asian.jpg")
     cards = [card1, card2, card3]
-    xiaoding.send_feed_card(cards)
+    xiaoben.send_feed_card(cards)
 
 |image6|
 
@@ -129,7 +129,7 @@
                                  btns=btns1,
                                  btn_orientation=1,
                                  hide_avatar=1)
-    xiaoding.send_action_card(actioncard1)
+    xiaoben.send_action_card(actioncard1)
 
 |image7|
 
@@ -142,7 +142,7 @@
                                  btns=btns2,
                                  btn_orientation=1,
                                  hide_avatar=1)
-    xiaoding.send_action_card(actioncard2)
+    xiaoben.send_action_card(actioncard2)
 
 |image8|
 
@@ -155,7 +155,7 @@
                                  btns=btns3,
                                  btn_orientation=1,
                                  hide_avatar=1)
-    xiaoding.send_action_card(actioncard3)
+    xiaoben.send_action_card(actioncard3)
 
 .. |image0| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/text_at_all.png
 .. |image1| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/text_at_one.png
