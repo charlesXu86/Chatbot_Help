@@ -43,7 +43,7 @@
 -  支持消息发送失败时自动通知；
 -  支持Python2、Python3；
 -  支持钉钉官方消息发送频率限制限制：每个机器人每分钟最多发送20条；
--  支持钉钉开放平台之企业内部\ `自定义outgoing机器人消息发送 <https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq>`__；
+-  支持钉钉开放平台之企业内部\ `自定义outgoing机器人消息发送 <https://ding-doc.dingtalk.com/doc#/serverapi2/elzz1p>`__；
 
 
 三、各消息类型使用示例
@@ -157,13 +157,13 @@
                                  hide_avatar=1)
     xiaoben.send_action_card(actioncard3)
 
-.. |image0| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/text_at_all.png
-.. |image1| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/text_at_one.png
-.. |image2| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/link.png
-.. |image3| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/markdown_at_all.png
-.. |image4| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/markdown_at_one.png
-.. |image5| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/feedcard.png
-.. |image6| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/global_actioncard.png
-.. |image7| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/select_actioncard.png
-.. |image8| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/multi_actioncard.png
-.. |image9| image:: https://github.com/charlesXu86/Chatbot_Help/blob/master/img/image_msg.png
+.. |image0| image:: https://raw.githubusercontent.com/charlesXu86/Chatbot_Help/master/img/text_at_all.png
+.. |image1| image:: https://raw.githubusercontent.com/charlesXu86/Chatbot_Help/blob/master/img/text_at_one.png
+.. |image2| image:: https://raw.githubusercontent.com/charlesXu86/Chatbot_Help/blob/master/img/link.png
+.. |image3| image:: https://raw.githubusercontent.com/charlesXu86/Chatbot_Help/blob/master/img/markdown_at_all.png
+.. |image4| image:: https://raw.githubusercontent.com/charlesXu86/Chatbot_Help/blob/master/img/markdown_at_one.png
+.. |image5| image:: https://raw.githubusercontent.com/charlesXu86/Chatbot_Help/blob/master/img/feedcard.png
+.. |image6| image:: https://raw.githubusercontent.com/charlesXu86/Chatbot_Help/blob/master/img/global_actioncard.png
+.. |image7| image:: https://raw.githubusercontent.com/charlesXu86/Chatbot_Help/blob/master/img/select_actioncard.png
+.. |image8| image:: https://raw.githubusercontent.com/charlesXu86/Chatbot_Help/blob/master/img/multi_actioncard.png
+.. |image9| image:: https://raw.githubusercontent.com/charlesXu86/Chatbot_Help/blob/master/img/image_msg.png
