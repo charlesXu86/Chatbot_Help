@@ -52,4 +52,4 @@
 五、Resources
 ======================
 
-.. _`Dingtalk_README`：https://github.com/charlesXu86/Chatbot_Help/blob/master/Dingtalk_README.rst
+.. _`Dingtalk_README`: https://github.com/charlesXu86/Chatbot_Help/blob/master/Dingtalk_README.rst
